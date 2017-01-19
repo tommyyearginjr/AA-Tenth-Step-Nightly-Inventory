@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+    <style>
+      #id1 {
+      text-align: center; color: red;
+      text-decoration: underline;
+      font-style: italic;
+      }
+      ol.qanda {
+      list-style-type: upper-roman;
+      }
+    </style>
+    
+  </head>
+    <body>
+    
+      <h1 id="id1"></h1>
+	<p id="id2"></p>
+	<ol class="qanda">
+<li><p id="id3"></p></li>
+<li><p id="id4"></p></li>
+<li><p id="id5"></p></li>
+<li><p id="id6"></p></li>
+<li><p id="id7"></p></li>
+<li><p id="id8"></p></li>
+<li><p id="id9"></p></li>
+<li><p id="id10"></p></li>
+<li><p id="id11"></p></li>
+	</ol>
+<p id="id12"></p>
+
+	
+      
+
+    <script>
+
+// ------------------------------------------------
+// -----Today's date code.-------------------------
+// ------------------------------------------------
+
+var today = new Date();
+var dd = today.getDate();
+var mm = today.getMonth()+1; //January is 0!
+var yyyy = today.getFullYear();
+if(dd<10) {
+    dd='0'+dd
+} 
+if(mm<10) {
+    mm='0'+mm
+} 
+today = mm+'/'+dd+'/'+yyyy;
+
+// ------------------------------------------------
+// -----End of Today's date code.------------------
+// ------------------------------------------------
+
+
+// ------------------------------------------------
+// -----Input strings to set values.---------------
+// ------------------------------------------------
+
+prompt("When we retire at night, we constructively review our day.", "Press OK to begin Nightly Inventory."); // Is there a better way to do this intro?
+
+var resent = prompt("Were we resentful?", "Answer?");
+
+var selfish = prompt("Were we selfish?", "Answer?");
+
+var dishonest = prompt("Were we dishonest?", "Answer?");
+
+var afraid = prompt("Were we afraid?", "Answer?");
+
+var apology = prompt("Do we owe an apology?", "Answer?");
+
+var hidden = prompt("Have we kept something to ourselves which should be discussed with another person at once?", "Answer?");
+
+var kind = prompt("Were we kind and loving toward all?", "Answer?");
+
+var better = prompt("What could we have done better?", "Answer?");
+
+var thinking = prompt("Were we thinking of ourselves most of the time? Or were we thinking of what we could do for others, of what we could pack into the stream of life?", "Answer?");
+
+// ------------------------------------------------
+// -----End input strings to set values.-----------
+// ------------------------------------------------
+
+// ------------------------------------------------
+// -----Print display.-----------------------------
+// ------------------------------------------------
+
+document.getElementById("id1").innerHTML = "Nightly Inventory for " + today + ".";
+        
+document.getElementById("id2").innerHTML = "When we retire at night, we constructively review our day."
+
+document.getElementById("id3").innerHTML = "Were we resentful? " + resent;
+
+document.getElementById("id4").innerHTML = "Were we selfish? " + selfish;
+
+document.getElementById("id5").innerHTML = "Were we dishonest? " + dishonest;
+
+document.getElementById("id6").innerHTML = "Were we afraid? " + afraid;
+
+document.getElementById("id7").innerHTML = "Do we owe an apology? " + apology;
+
+document.getElementById("id8").innerHTML = "Have we kept something to ourselves which should be discussed with another person at once? " + hidden;
+
+document.getElementById("id9").innerHTML = "Were we kind and loving toward all? " + kind;
+
+document.getElementById("id10").innerHTML = "What could we have done better? " + better;
+
+document.getElementById("id11").innerHTML = "Were we thinking of ourselves most of the time? Or were we thinking of what we could do for others, of what we could pack into the stream of life? " + thinking;
+
+document.getElementById("id12").innerHTML = "But we must be careful not to drift into worry, remorse or morbid reflection, for that would diminish our usefulness to others. After making our review we ask God's forgiveness and inquire what corrective measures should be taken.";
+
+// ------------------------------------------------
+// -----End print display.-------------------------
+// ------------------------------------------------
+    
+    </script>
+<hr>NIGHTLY INVENTORY. Updated 2017-01-19 10:33 EST. 
+  </body>
+</html>
