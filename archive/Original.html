@@ -1,0 +1,65 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <script type="text/javascript">
+      function space() {
+      document.write("<br />");
+      }
+      var resent = prompt("Were we resentful?", "Answer?");
+      var selfish = prompt("Were we selfish?", "Answer?");
+      var dishonest = prompt("Were we dishonest?", "Answer?");
+      var afraid = prompt("Were we afraid?", "Answer?");
+      var apology = prompt("Do we owe an apology?", "Answer?");
+      var hidden = prompt("Have we kept something to ourselves which should be discussed with another person at once?", "Answer?");
+      var kind = prompt("Were we kind and loving toward all?", "Answer?");
+      var better = prompt("What could we have done better?", "Answer?");
+      var thinking = prompt("Were we thinking of ourselves most of the time? Or were we thinking of what we could do for others, of what we could pack into the stream of life?", "Answer?");
+      var today = new Date();
+var dd = today.getDate();
+var mm = today.getMonth()+1; //January is 0!
+var yyyy = today.getFullYear();
+if(dd<10) {
+    dd='0'+dd
+} 
+if(mm<10) {
+    mm='0'+mm
+} 
+today = mm+'/'+dd+'/'+yyyy;
+	  document.write("Nightly inventory for " + today + ".");
+	  space();
+	  space();
+      document.write("When we retire at night, we constructively review our day.");
+	  space();
+	        space();
+      document.write("Were we resentful? " + resent);
+	  space();
+	  space();
+      document.write("Were we selfish? " + selfish);
+	  space();
+	        space();
+      document.write("Were we dishonest? " + dishonest);
+	  space();
+	        space();
+      document.write("Were we afraid? " + afraid);
+	  space();
+	        space();
+      document.write("Do we owe an apology? "  + apology);
+	  space();
+	        space();
+      document.write("Have we kept something to ourselves which should be discussed with another person at once? " + hidden);
+	  space();
+	        space();
+      document.write("Were we kind and loving to all? " + kind);
+	  space();
+	        space();
+      document.write("What cold we have done better? " + better);
+	  space();
+	        space();
+      document.write("Were we thinking of ourselves most of the time? Or were we thinking of what we could do for others, of what we could pack into the stream of life? " + thinking);
+	  space();
+	        space();
+      document.write("But we must be careful not to drift into worry, remorse or morbid reflection, for that would diminish our usefulness to others. After making our review we ask God's forgiveness and inquire what corrective measures should be taken.");    
+    </script>
+  </body>
+</html>
